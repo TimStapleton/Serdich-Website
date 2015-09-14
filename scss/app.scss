@@ -38,3 +38,137 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+body {
+  overflow-x: hidden;
+
+  height: auto;
+
+  background-color: $grey;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/bg3.jpg');
+}
+
+section.blocky, header, footer {
+  display: block;
+  box-sizing: border-box;
+
+  position: relative;
+  float: left;
+  clear: both;
+
+  width: auto;
+  height: auto;
+}
+
+.up {
+  text-transform: uppercase;
+}
+
+#logo {
+  background-color: $dark;
+  padding-top: 2em !important;
+  padding-bottom: 2em !important;
+
+  position: fixed;
+  width: 100%;
+
+  height: 150px;
+  z-index: 1000;
+  opacity: 1;
+
+  img {
+    width: 110px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -55px;
+    margin-top: -10px;
+  }
+}
+
+.spacer{
+  height: 100vh;
+  width: 100%;
+  background: transparent;
+
+  margin-bottom: 0em;
+}
+
+#menu {
+  background-color: $dark;
+
+  position: fixed;
+  top: 150px;
+  width:100%;
+  height: 75px;
+  z-index: 999;
+
+  border-bottom: solid 4px $grey;
+
+  //box-shadow: 0 4px 40px $white;
+
+  padding-left: 2em;
+  padding-right: 2em;
+  height: auto !important;
+  min-height: 1px !important;
+
+  h3 {
+    margin-top: .43em;
+    margin-left: .5em;
+  }
+
+  margin-bottom: 2em;
+  opacity: 1;
+}
+
+.content{
+  margin-bottom: 2em;
+  background-color: $white;
+
+  min-height: 900px;
+
+  box-shadow: 0 0 15px $grey-darker;
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: $grey;
+    margin-bottom: 1em;
+  }
+}
+
+.point {
+  width: 98%;
+  height: 340px;
+  border-bottom: 3px solid $iron;
+  background-color: $gainsboro;
+
+  margin-left: 1%;
+  margin-right: auto;
+  margin-bottom: 2.4em;
+
+  padding: 1em 2em;
+
+  transition: all 0.32s ease-in-out;
+
+  &:hover {
+    background-color: $grey-darker;
+    border-bottom-color: $grey;
+
+    h1, h2, h3, h4, h5, h6, p, a {
+      color: $white !important;
+    }
+  }
+}
+
+#footer {
+  width: 100%;
+
+  padding-top: 1.7em;
+  text-align: center;
+
+  background-color: $silver;
+  opacity: 0.5;
+}
