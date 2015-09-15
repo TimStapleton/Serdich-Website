@@ -238,9 +238,9 @@ $h5-font-size: rem-calc(20);
 $h6-font-size: 1rem;
 
 // We use these to control header size reduction on small screens
-$h1-font-reduction: rem-calc(10);
-$h2-font-reduction: rem-calc(10);
-$h3-font-reduction: rem-calc(5);
+$h1-font-reduction: rem-calc(14);
+$h2-font-reduction: rem-calc(12);
+$h3-font-reduction: rem-calc(8);
 $h4-font-reduction: rem-calc(5);
 $h5-font-reduction: 0;
 $h6-font-reduction: 0;
@@ -1444,11 +1444,11 @@ $topbar-link-text-transform: uppercase;
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: $dark;
-// $topbar-dropdown-link-color: $white;
-// $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
-// $topbar-dropdown-link-bg: $oil;
-// $topbar-dropdown-link-bg-hover: $jet;
-// $topbar-dropdown-link-weight: $font-weight-normal;
+$topbar-dropdown-link-color: $base;
+$topbar-dropdown-link-color-hover: $topbar-link-color-hover;
+$topbar-dropdown-link-bg: $topbar-link-bg;
+$topbar-dropdown-link-bg-hover: $topbar-link-bg-hover;
+$topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
 // $topbar-dropdown-toggle-alpha: .4;
@@ -1470,7 +1470,7 @@ $topbar-menu-link-color-toggled: $aluminum;
 // $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles
-$topbar-transition-speed: 300ms;
+$topbar-transition-speed: 1200ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
 // $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
 // $topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
@@ -1483,9 +1483,9 @@ $topbar-divider-border-bottom: solid 0px scale-color($topbar-bg-color, $lightnes
 $topbar-divider-border-top: solid 0px scale-color($topbar-bg-color, $lightness: -50%);
 
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
-// $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
-// $topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li//
+$topbar-sticky-class: ".sticky";
+$topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+$topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li//
 
 // 36. Visibility Classes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
