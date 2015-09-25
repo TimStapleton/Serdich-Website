@@ -57,6 +57,9 @@
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import 'foundation/functions';
 
+//Import _globals
+@import 'foundation/components/global';
+
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
 
@@ -79,7 +82,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-$row-width: rem-calc(1280);
+$row-width: rem-calc(2048);
 // $total-columns: 12;
 $column-gutter: rem-calc(30);
 
@@ -161,9 +164,9 @@ $global-rounded: 1000px;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$small-breakpoint:  em-calc(1078);
+$small-breakpoint:  em-calc(720);
 $medium-breakpoint: em-calc(1280);
-$large-breakpoint:  em-calc(1560);
+$large-breakpoint:  em-calc(1440);
 $xlarge-breakpoint: em-calc(1920);
 
 $small-range:   (0, $small-breakpoint);
@@ -1474,6 +1477,7 @@ $topbar-transition-speed: 1200ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
 // $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
 // $topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
+$topbar-breakpoint: $medium-breakpoint;
 
 // Top-bar input styles
 // $topbar-input-height: rem-calc(28);

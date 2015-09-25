@@ -39,6 +39,8 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+@import 'foundation/components/global';
+
 body {
   overflow-x: hidden;
 
@@ -138,6 +140,7 @@ section.blocky, header, footer {
     color: $grey;
     margin-bottom: 1em;
   }
+  margin-bottom: 0 !important;
 }
 
 .point {
@@ -163,7 +166,7 @@ section.blocky, header, footer {
     position: absolute;
     z-index: 0;
 
-    width: 90%;
+    width: rem-calc(400);
     height: 340px;
     left: 5%;
     top: 0;
@@ -186,7 +189,7 @@ section.blocky, header, footer {
     width: 60%;
     left: 20%;
     height: auto;
-    
+
     text-align: center;
     z-index: 1;
   }
@@ -222,6 +225,22 @@ section.blocky, header, footer {
   padding-top: 1.7em;
   text-align: center;
 
-  background-color: $silver;
-  opacity: 0.5;
+  background-color: $tuatara;
+
+  .map {
+    list-style: none;
+    text-align: left;
+
+    li {
+      text-align: left;
+    }
+
+    a {
+      text-decoration: none;
+      text-rendering: geometricPrecision;
+      color: $aluminum;
+
+      text-align: left;
+    }
+  }
 }
