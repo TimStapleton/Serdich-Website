@@ -8,13 +8,13 @@
 
     settings : {
       index : 0,
-      start_offset : 0,
+      start_offset : 150,
       sticky_class : 'sticky',
       custom_back_text : true,
       back_text : 'Back',
       mobile_show_parent_link : true,
       is_hover : true,
-      scrolltop : true, // jump to top when sticky nav menu toggle is clicked
+      scrolltop : false, // jump to top when sticky nav menu toggle is clicked
       sticky_on : 'all',
       dropdown_autoclose: true
     },

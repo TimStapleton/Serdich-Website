@@ -735,7 +735,7 @@
     settings : {
       live_validate : true,
       validate_on_blur : true,
-      // validate_on: 'tab', // tab (when user tabs between fields), change (input changes), manual (call custom events) 
+      // validate_on: 'tab', // tab (when user tabs between fields), change (input changes), manual (call custom events)
       focus_on_invalid : true,
       error_labels : true, // labels with a for="inputId" will recieve an `error` class
       error_class : 'error',
@@ -816,7 +816,7 @@
           }
         })
         .on('reset', function (e) {
-          return self.reset($(this), e);          
+          return self.reset($(this), e);
         })
         .find('input, textarea, select').not(":hidden, [data-abide-ignore]")
           .off('.abide')
@@ -850,7 +850,7 @@
               $('html, body').animate({
                   scrollTop: $(e.target).offset().top
               }, 100);
-            } 
+            }
           });
     },
 
@@ -2358,7 +2358,7 @@
       else {
         vals = group ? equalizer.find('['+this.attr_name()+'-watch="'+group+'"]:visible') : equalizer.find('['+this.attr_name()+'-watch]:visible');
       }
-      
+
       if (vals.length === 0) {
         return;
       }
@@ -5399,11 +5399,11 @@
           var el = this;
           var keyCode = e.keyCode || e.which;
             // if user pressed tab key
-            if (keyCode == 9) { 
+            if (keyCode == 9) {
               e.preventDefault();
               // TODO: Change usual_tab_behavior into accessibility function?
               usual_tab_behavior(e, el);
-            } 
+            }
         })
         // Click event: tab title
         .on('click.fndtn.tab', '[' + this.attr_name() + '] > * > a', function(e) {
@@ -5691,7 +5691,7 @@
           if (/mouse/i.test(e.type) && self.ie_touch(e)) {
             return false;
           }
-          
+
           if ($this.hasClass('open')) {
             if (Modernizr.touch && /touchstart|MSPointerDown/i.test(e.type)) {
               e.preventDefault();
@@ -5844,7 +5844,7 @@
         if (nub.attr('style')) {
           nub.removeAttr('style');
         }
-        
+
         tip.removeClass('tip-override');
         if (classes && classes.indexOf('tip-top') > -1) {
           if (Foundation.rtl) {
@@ -5948,7 +5948,7 @@
       back_text : 'Back',
       mobile_show_parent_link : true,
       is_hover : true,
-      scrolltop : true, // jump to top when sticky nav menu toggle is clicked
+      scrolltop : false, // jump to top when sticky nav menu toggle is clicked
       sticky_on : 'all',
       dropdown_autoclose: true
     },

@@ -45,12 +45,7 @@ body {
   overflow-x: hidden;
 
   height: auto;
-
-  background-color: $grey;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-image: url('../images/bg3.jpg');
+  padding: 0 !important;
 }
 
 section.blocky, header, footer {
@@ -69,44 +64,75 @@ section.blocky, header, footer {
   text-transform: uppercase;
 }
 
-#logo {
-  background-color: $dark;
-  padding-top: 2em !important;
-  padding-bottom: 2em !important;
+//###HEADER#STYLES###
+.header{
+  z-index: 0;
 
-  position: absolute;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
-  height: 150px;
-  left: 0;
-  top: 0;
 
-  z-index: 999;
-  opacity: 1;
+  background-color: $grey;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/bg9.jpg');
 
-  img {
-    width: 110px;
+  display: block;
+  box-sizing: border-box;
+
+  position: relative;
+  float: left;
+  clear: both;
+
+  margin-bottom: 0em;
+
+  .intro {
+    width: 100%;
     height: auto;
+    max-width: $small-breakpoint;
+
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -55px;
-    margin-top: -10px;
+    left: 0;
+    bottom: 0;
+
+    padding: 0.6em 1em;
+    background-color: rgba(1,1,1, 0.0);
+
+    p {
+      font-size: 22px !important;
+      font-weight: 300 !important;
+      letter-spacing: 0.5px;
+      line-height: 130%;
+
+      color: $white !important;
+      text-shadow: 1px 1px 1px $dark;
+    }
   }
 }
 
-.spacer{
-  height: 100vh;
-  width: 100%;
-  background: transparent;
+$logo-size: 260px;
 
-  margin-bottom: 0em;
+.logo {
+  display: block;
+
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  width: $logo-size;
+  max-width: 90%;
+  height: auto;
+
+  margin-top: rem-calc(-$logo-size/2);
+  margin-left: rem-calc(-$logo-size/2);
 }
 
+//###MENU#STYLES###
 #menu {
   background-color: $dark;
 
   position: absolute;
-  top: 150px;
+  top: 0;
   width:100%;
   z-index: 1000;
 
@@ -118,114 +144,242 @@ section.blocky, header, footer {
   padding-right: 2em;
   height: auto !important;
   min-height: 1px !important;
+  opacity: 1;
+  .name {
+      transition: all 0.6s ease-out;
+  }
+
+  .name:hover {
+    transform: translate(15px, 0);
+  }
+
+  h1 {
+    font-size: 26px !important;
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+
+    display: block;
+    position: relative;
+    float: left;
+
+    height: 100%;
+    width: auto;
+    line-height: 100px !important;
+    padding-left: 2em;
+  }
 
   h3 {
     margin-top: .43em;
     margin-left: .5em;
   }
+}
 
-  margin-bottom: 2em;
+@media(max-width: $small-breakpoint){
+  #menu h1 {
+    font-size: 19px !important;
+  }
+}
+
+#logo {
+  background-color: $dark;
+
+  position: relative;
+  float: left;
+  margin-top: 5px;
+  height: 90px;
+  width: auto;
+
+  z-index: 999;
   opacity: 1;
 }
 
+#logotype {
+  background-color: $dark;
+
+  position: relative;
+  float: left;
+  margin-top: 30px;
+  margin-left: 35px;
+  height: 50px;
+  width: auto;
+
+  z-index: 999;
+  opacity: 1;
+}
+
+.fixed {
+  border-bottom: solid 4px $grey;
+  padding-left: 2em !important;
+  padding-right: 2em !important;
+}
+
+//###CONTENT#STYLES###
+$footer-height: 260px;
+
 .content{
-  margin-bottom: 2em;
+  margin-bottom: $footer-height !important;
   background-color: $white;
 
   min-height: 900px;
 
-  box-shadow: 0 0 15px $grey-darker;
-
-  h1, h2, h3, h4, h5, h6, p {
-    color: $grey;
-    margin-bottom: 1em;
-  }
+  z-index: 500;
+  box-shadow: 0 0 20px $black;
   margin-bottom: 0 !important;
+
+  h1 {
+    color: $grey;
+    margin: 1.2em;
+  }
+
+  h2, h3, h4, h5, h6, p, a {
+    color: $white;
+    margin: 0.5 em 0 1em 0;
+
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+  }
+
+   p {
+     padding: 2em;
+     text-align: left;
+     letter-spacing: 2px;
+     font-weight: normal;
+   }
 }
 
+@media(max-width: $small-breakpoint) {
+   .content p{
+     font-size: 1em;
+   }
+}
+
+$point-height: 440px;
+
 .point {
-  width: 98%;
-  height: 340px;
-  border: 3px solid $iron;
+  box-sizing: border-box;
+  width: 100%;
+  height: $point-height;
+
+  //border-bottom: solid 3px $grey;
+  border-radius: 12px;
+
   background-color: $gainsboro;
   background-image: url("../images/mountains2.jpg");
   background-position: center;
   background-size: cover;
 
   overflow: hidden;
+  margin-bottom: 3.4em;
 
-  margin-left: 1%;
-  margin-right: auto;
-  margin-bottom: 2.4em;
-
-  padding: 1em 2em;
-
-  //#DARKEN#
-  .darken {
-    display: block;
-    position: absolute;
-    z-index: 0;
-
-    width: rem-calc(400);
-    height: 340px;
-    left: 5%;
-    top: 0;
-    position: center;
-
-    transition: all 0.32s ease-in-out;
-
-    background-color: $black;
-    opacity: 0;
-  }
+  padding: 0;
 
   //#HOVER#TRANSITIONS#
-  transition: all 0.32s ease-in-out;
+  transition: all 0.52s ease-in-out;
 
-  h2 {
-    transition: all 0.32s ease-in-out;
-
+  .description {
     display: block;
-    position: absolute;
-    width: 60%;
-    left: 20%;
-    height: auto;
+    position: relative;
 
+    margin-top: rem-calc($point-height - 60);
+
+    width: 100%;
+    height: auto;
+    min-height: $point-height;
+    background-color: $oil;
+
+    opacity: 0.75;
+
+    padding-top: .6em;
+
+    -webkit-transition: .6s ease-in-out;
+    -webkit-transition-delay: 0.04s;
+    -o-transition: .6s ease-in-out;
+    -o-transition-delay: 0.04s;
+    -moz-transition: .6s ease-in-out;
+    -moz-transition-delay: 0.04s;
+    transition: .6s ease-in-out;
+    transition-delay: 0.04s;
+  }
+
+  .name {
     text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
     z-index: 1;
   }
 
   &:hover {
-    transition: all 0.32s ease-in-out;
+    -webkit-transition: .6s ease-in-out;
+    -webkit-transition-delay: 0.04s;
+    -o-transition: .6s ease-in-out;
+    -o-transition-delay: 0.04s;
+    -moz-transition: .6s ease-in-out;
+    -moz-transition-delay: 0.04s;
+    transition: .6s ease-in-out;
+    transition-delay: 0.04s;
 
-    background-color: $grey-darker;
-    border: solid 6px $grey;
+    .description {
+      -webkit-transition: .6s ease-in-out;
+      -webkit-transition-delay: 0.1s;
+      -o-transition: .6s ease-in-out;
+      -o-transition-delay: 0.1s;
+      -moz-transition: .6s ease-in-out;
+      -moz-transition-delay: 0.1s;
+      transition: .6s ease-in-out;
+      transition-delay: 0.1s;
 
-    .darken {
-      opacity: 0.2;
-    }
-
-    h2{
-      color: $white !important;
-      font-size: (($h2-font-size) + 0.1);
-      margin-top: ($header-top-margin*2);
-    }
-    @include exports("type") {
-      @if $include-html-type-classes {
-        h2 {
-          font-size: (($h2-font-size - $h2-font-reduction) + 0.1);
-        }
-      }
+      margin-top: 0;
     }
   }
 }
 
+#item1 {
+  background-image : url("../images/textile.jpg") !important;
+}
+#item2 {
+  background-image : url("../images/shtoru.jpg") !important;
+}
+#item3 {
+  background-image : url("../images/tkani.jpg") !important;
+}
+#item4 {
+  background-image : url("../images/karniz.jpg") !important;
+}
+#item5 {
+  background-image : url("../images/sunprotection.jpg") !important;
+}
+#item6 {
+  background-image : url("../images/misc.jpg") !important;
+}
+
+#spacer {
+  height: $footer-height;
+  background-color: transparent;
+}
+
 #footer {
   width: 100%;
+  height: $footer-height;
+
+  position: fixed !important;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  z-index: -1;
 
   padding-top: 1.7em;
   text-align: center;
 
   background-color: $tuatara;
+  background-image: url("../images/bg_pattern.jpg");
+  background-size: 320px 240px;
+  background-repeat: repeat;
 
   .map {
     list-style: none;

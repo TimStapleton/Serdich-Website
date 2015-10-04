@@ -90,7 +90,7 @@ $column-gutter: rem-calc(30);
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -120,12 +120,12 @@ $jet         : #222222;
 $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+$primary-color: #008CBA;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
 
 //COLORS
 $pale: #FFC2B3;
@@ -235,16 +235,16 @@ $header-text-rendering: optimizeLegibility;
 // We use these to control header font sizes
 $h1-font-size: rem-calc(48);
 $h2-font-size: rem-calc(40);
-$h3-font-size: rem-calc(30);
-$h4-font-size: rem-calc(25);
+$h3-font-size: rem-calc(25);
+$h4-font-size: rem-calc(22);
 $h5-font-size: rem-calc(20);
 $h6-font-size: 1rem;
 
 // We use these to control header size reduction on small screens
-$h1-font-reduction: rem-calc(14);
-$h2-font-reduction: rem-calc(12);
-$h3-font-reduction: rem-calc(8);
-$h4-font-reduction: rem-calc(5);
+$h1-font-reduction: rem-calc(10);
+$h2-font-reduction: rem-calc(8);
+$h3-font-reduction: rem-calc(6);
+$h4-font-reduction: rem-calc(4);
 $h5-font-reduction: 0;
 $h6-font-reduction: 0;
 
@@ -260,9 +260,9 @@ $h6-font-reduction: 0;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
-$paragraph-font-family: inherit;
+$paragraph-font-family: $font-family-sans-serif;
 $paragraph-font-weight: $font-weight-normal;
-$paragraph-font-size: 1rem;
+$paragraph-font-size: 1.15rem;
 $paragraph-line-height: 1.6;
 $paragraph-margin-bottom: rem-calc(20);
 $paragraph-aside-font-size: rem-calc(14);
@@ -1417,12 +1417,12 @@ $topbar-bg-color: $dark;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: rem-calc(75);
+$topbar-height: rem-calc(100);
 $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: $font-weight-normal;
-$topbar-title-font-size: rem-calc(26);
+$topbar-title: rem-calc(26) !important;
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: $base;
@@ -1452,7 +1452,7 @@ $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
 $topbar-dropdown-link-bg: $topbar-link-bg;
 $topbar-dropdown-link-bg-hover: $topbar-link-bg-hover;
 $topbar-dropdown-link-weight: $font-weight-normal;
-// $topbar-dropdown-toggle-size: 5px;
+$topbar-dropdown-toggle-size: 30px;
 // $topbar-dropdown-toggle-color: $white;
 // $topbar-dropdown-toggle-alpha: .4;
 
@@ -1463,7 +1463,7 @@ $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-label-bg: $oil;
 
 // Top menu icon styles
-// $topbar-menu-link-transform: uppercase;
+$topbar-menu-link-transform: uppercase;
 $topbar-menu-link-font-size: rem-calc(16);
 $topbar-menu-link-weight: $font-weight-normal;
 $topbar-menu-link-color: $iron;
