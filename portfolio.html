@@ -25,24 +25,17 @@
       <div class="sticky contain-to-grid">
         <nav data-topbar role="navigation" class="top-bar">
           <ul class="title-area">
-            <li class="name"><img id="logo" src="images/Logo_new.png">
-              <h1>Текстиль в Интерьере</h1>
+            <li class="name"><img id="logo" src="images/Logo_shadow.png"><img id="logotype" src="images/Logotype.png">
+              <!--h1 Текстиль в Интерьере-->
             </li>
             <li onclick="checkTop()" class="toggle-topbar menu-icon"><a href="#"> <span>Меню</span></a></li>
           </ul>
           <section class="top-bar-section">
             <ul class="right">
               <li><a href="index.html">Главная</a></li>
-              <li class="divider"></li>
               <li><a href="portfolio.html">Портфолио</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Эскизы</a></li>
-              <li class="divider"></li>
               <li><a href="#">Услуги</a></li>
-              <li class="divider"></li>
               <li><a href="#">Блог</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Контакты</a></li>
             </ul>
           </section>
         </nav>
@@ -55,16 +48,64 @@
           //h1.up.text-center Logo
           //img(src = "images/Logo_new.png")
       -->
+      <!--.logo
+      img(src = "images/Logo_shadow.png")
+      
+      -->
       <div class="intro">
-        <h2 class="text-left">Портфолио</h2>
-        <h3 class="text-left">В этом разделе сайта вы можете увидеть мои работы</h3>
-        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum mi eu sapien vestibulum fermentum. Nunc ut suscipit massa. Mauris scelerisque tortor quis quam aliquet, lacinia tempor massa fermentum. Morbi felis urna, consectetur nec aliquam sed, ornare eu sapien. Etiam.</p>
+        <!--h2.text-left Здравствуй!-->
+        <!--h3.text-left Я - дизайнер-декоратор Наталья Сердич.-->
+        <p class="text-justify">Текстиль играет важнейшую роль в создании красивого и стильного интерьера. Шторы и гардины, покрывала и скатерти, мебельные чехлы и подушки, оригинальные дизайнерские штучки – без них невозможно представить уютный дом. Они привносят особое настроение и тепло, а также являются неотъемлемой составляющей выбранного стиля.</p>
       </div>
     </section>
-    <section class="fullWidth">
-      <h2>1</h2>
+    <section class="fullWidth portfolio">
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+          <h1 class="text-center up">Разделы</h1>
+        </div>
+        <div class="small-12 columns">
+          <div data-magellan-expedition="fixed">
+            <dl class="sub-nav">
+              <dd data-magellan-arrival="1"><a href="#1">Гостинные</a></dd>
+              <dd data-magellan-arrival="2"><a href="#2">Спальни</a></dd>
+              <dd data-magellan-arrival="3"><a href="#3">Кухни</a></dd>
+              <dd data-magellan-arrival="4"><a href="#4">Детские</a></dd>
+              <dd data-magellan-arrival="5"><a href="#5">Кабинеты</a></dd>
+              <dd data-magellan-arrival="6"><a href="#6">Разное</a></dd>
+              <dd data-magellan-arrival="7"><a href="#7">Эскизы</a></dd>
+            </dl>
+          </div>
+        </div>
+        <div id="1" class="medium-6 small-12 columns">
+          <h2 data-magellan-destination="1" class="text-left">Гостинные</h2><a name="1"></a>
+          <div class="slider"></div>
+        </div>
+        <div id="2" class="medium-6 small-12 columns">
+          <h2 data-magellan-destination="2" class="text-left">Спальни</h2><a name="2"></a>
+          <div class="slider"></div>
+        </div>
+        <div id="3" class="medium-6 small-12 columns">
+          <h2 data-magellan-destination="3" class="text-left">Кухни</h2><a name="3"></a>
+          <div class="slider"></div>
+        </div>
+        <div id="4" class="medium-6 small-12 columns">
+          <h2 data-magellan-destination="4" class="text-left">Детские</h2><a name="4"></a>
+          <div class="slider"></div>
+        </div>
+        <div id="5" class="medium-6 small-12 columns">
+          <h2 data-magellan-destination="5" class="text-left">Кабинеты</h2><a name="5"></a>
+          <div class="slider"></div>
+        </div>
+        <div id="7" class="medium-6 small-12 columns">
+          <h2 data-magellan-destination="6" class="text-left">Разное</h2><a name="6"></a>
+          <div class="slider"></div>
+        </div>
+        <div id="6" class="medium-12 small-12 columns">
+          <h2 data-magellan-destination="7" class="text-left">Эскизы</h2><a name="7"></a>
+          <div class="slider"></div>
+        </div>
+      </div>
     </section>
-    <section id="spacer" class="fullWidth"></section>
     <section id="footer" class="fullWidth">
       <div class="row">
         <div class="large-offset-2 medium-offset-1 large-8 medium-10 small-12 columns">
@@ -76,7 +117,7 @@
                 </div>
                 <div class="large-6 medium-6 small-6 columns">
                   <ul class="map">
-                    <li><a href="#">Ссылка</a></li>
+                    <li><a href="index.html">Ссылка</a></li>
                     <li><a href="#">Ссылка</a></li>
                     <li><a href="#">Ссылка</a></li>
                     <li><a href="#">Ссылка</a></li>
@@ -100,11 +141,13 @@
     </section>
     <!--SCRIPTS-->
     <!--JQUERY-->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/vendor/jquery.js"></script>
     <!--JQUERY EASING-->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!--FOUNDATION-->
     <script src="bower_components/foundation/js/foundation.js"></script>
+    <!--MAGELLAN-->
+    <!--script(src = "bower_components/foundation/js/foundation.magellan.js")-->
     <!--APP-->
     <script src="js/app.js"></script>
   </body>

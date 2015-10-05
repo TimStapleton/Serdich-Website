@@ -129,6 +129,7 @@ $logo-size: 260px;
 
 //###MENU#STYLES###
 #menu {
+  display: none;
   background-color: $dark;
 
   position: absolute;
@@ -145,8 +146,18 @@ $logo-size: 260px;
   height: auto !important;
   min-height: 1px !important;
   opacity: 1;
+
+  nav {
+    padding: 0 !important;
+  }
+
   .name {
       transition: all 0.6s ease-out;
+  }
+
+  .menu-icon {
+    z-index: 2000;
+    background-color: $dark;
   }
 
   .name:hover {
@@ -190,7 +201,7 @@ $logo-size: 260px;
   width: auto;
 
   z-index: 999;
-  opacity: 1;
+  opacity: 0.7;
 }
 
 #logotype {
@@ -198,13 +209,13 @@ $logo-size: 260px;
 
   position: relative;
   float: left;
-  margin-top: 30px;
+  margin-top: 28px;
   margin-left: 35px;
-  height: 50px;
+  height: 54px;
   width: auto;
 
   z-index: 999;
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .fixed {
@@ -214,20 +225,20 @@ $logo-size: 260px;
 }
 
 //###CONTENT#STYLES###
-$footer-height: 260px;
-
 .content{
+  display: block;
+  box-sizing: border-box;
+  overflow: visible;
   margin-bottom: $footer-height !important;
+
   background-color: $white;
 
   min-height: 900px;
 
   z-index: 500;
   box-shadow: 0 0 20px $black;
-  margin-bottom: 0 !important;
 
   h1 {
-    color: $grey;
     margin: 1.2em;
   }
 
@@ -274,7 +285,7 @@ $point-height: 440px;
   background-size: cover;
 
   overflow: hidden;
-  margin-bottom: 3.4em;
+  margin-bottom: 3.2em;
 
   padding: 0;
 
@@ -357,9 +368,52 @@ $point-height: 440px;
   background-image : url("../images/misc.jpg") !important;
 }
 
+//###PORTFOLIO###
+.portfolio {
+  display: block;
+  box-sizing: border-box;
+  overflow: visible;
+  margin-bottom: $footer-height !important;
+
+  background-color: $white;
+
+  min-height: 900px;
+
+  z-index: 500;
+  box-shadow: 0 0 20px $black;
+
+
+  h1 {
+    color: $grey;
+    margin: 1.2em;
+  }
+
+  h2 {
+    color: $grey;
+    margin: 1em 5%;
+  }
+
+
+  .slider {
+    display: block;
+    box-sizing: border-box;
+    width: 90%;
+    height: 540px;
+    margin: 1em auto;
+
+    max-width: 1280px;
+
+    background-color: $iron;
+  }
+}
+
+//###FOOTER###
+
 #spacer {
   height: $footer-height;
-  background-color: transparent;
+  background-color: $dark;
+
+  z-index: -2000;
 }
 
 #footer {
@@ -391,7 +445,6 @@ $point-height: 440px;
 
     a {
       text-decoration: none;
-      text-rendering: geometricPrecision;
       color: $aluminum;
 
       text-align: left;

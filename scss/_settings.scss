@@ -51,6 +51,9 @@
 // a. Base
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+//My own variables
+$footer-height: 260px;
+
 // This is the default html and body font-size for the base rem value.
 // $rem-base: 16px;
 
@@ -837,10 +840,10 @@ $clearing-carousel-thumb-active-border: 1px solid rgb(255,255,255);
 // 17. Magellan
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-magellan-classes: $include-html-classes;
+$include-html-magellan-classes: $include-html-classes;
 
-// $magellan-bg: $white;
-// $magellan-padding: 10px;
+$magellan-bg: $white;
+$magellan-padding: 12px;
 
 // 18. Off-canvas
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1249,26 +1252,26 @@ $side-nav-divider-size: 0px;
 // 28. Sub Nav
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-nav-classes: $include-html-classes;
+$include-html-nav-classes: $include-html-classes;
 
 // We use these to control margin and padding
-// $sub-nav-list-margin: rem-calc(-4 0 18);
-// $sub-nav-list-padding-top: rem-calc(4);
+$sub-nav-list-margin: rem-calc(-4 0 18);
+$sub-nav-list-padding-top: rem-calc(8);
 
 // We use this to control the definition
-// $sub-nav-font-family: $body-font-family;
-// $sub-nav-font-size: rem-calc(14);
-// $sub-nav-font-color: $aluminum;
-// $sub-nav-font-weight: $font-weight-normal;
-// $sub-nav-text-decoration: none;
-// $sub-nav-padding: rem-calc(3 16);
-// $sub-nav-border-radius: 3px;
-// $sub-nav-font-color-hover: scale-color($sub-nav-font-color, $lightness: -25%);
+$sub-nav-font-family: $font-family-sans-serif;
+$sub-nav-font-size: rem-calc(16);
+$sub-nav-font-color: $steel;
+$sub-nav-font-weight: $font-weight-normal;
+$sub-nav-text-decoration: none;
+$sub-nav-padding: rem-calc(3 16);
+$sub-nav-border-radius: 3px;
+$sub-nav-font-color-hover: $grey;
 
 
 // We use these to control the active item styles
 
-// $sub-nav-active-font-weight: $font-weight-normal;
+$sub-nav-active-font-weight: $font-weight-normal;
 // $sub-nav-active-bg: $primary-color;
 // $sub-nav-active-bg-hover: scale-color($sub-nav-active-bg, $lightness: -14%);
 // $sub-nav-active-color: $white;
