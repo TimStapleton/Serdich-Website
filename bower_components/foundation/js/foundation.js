@@ -3726,11 +3726,11 @@
     settings : {
       active_class : 'active',
       threshold : 0, // pixels from the top of the expedition for it to become fixes
-      destination_threshold : 20, // pixels from the top of destination for it to be considered active
+      destination_threshold : 200, // pixels from the top of destination for it to be considered active
       throttle_delay : 30, // calculation throttling to increase framerate
-      fixed_top : 0, // top distance in pixels assigend to the fixed element on scroll
+      fixed_top : 100, // top distance in pixels assigend to the fixed element on scroll
       offset_by_height : true,  // whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
-      duration : 700, // animation duration time
+      duration : 1100, // animation duration time
       easing : 'swing' // animation easing
     },
 
@@ -4497,15 +4497,15 @@
 
     settings : {
       animation : 'slide',
-      timer_speed : 10000,
+      timer_speed : 8000,
       pause_on_hover : true,
-      resume_on_mouseout : false,
+      resume_on_mouseout : true,
       next_on_click : true,
-      animation_speed : 500,
+      animation_speed : 600,
       stack_on_small : false,
       navigation_arrows : true,
       slide_number : true,
-      slide_number_text : 'of',
+      slide_number_text : 'из',
       container_class : 'orbit-container',
       stack_on_small_class : 'orbit-stack-on-small',
       next_class : 'orbit-next',

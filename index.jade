@@ -49,8 +49,6 @@ html
                 a(href = "#") Услуги
               li
                 a(href = "#") Блог
-              li
-                a(href = "#") Контакты
               
     section.fullWidth.header
       //#logo
@@ -111,31 +109,7 @@ html
             .large-6.medium-6.small-12.columns
               .row  
                 .large-12.columns
-                  h5.text-left На сайте:
-                .large-6.medium-6.small-6.columns
-                  ul.map
-                    li
-                      a(href = "index.html") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                .large-6.medium-6.small-6.columns
-                  ul.map
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
+                  h4.text-center 
           
     //SCRIPTS
     //JQUERY
@@ -149,3 +123,5 @@ html
     
     //APP
     script(src = "js/app.js")
+    
+    script jQuery(document).ready(function($) {$(window).trigger('resize');});

@@ -146,7 +146,7 @@ $orbit-timer-hide-for-small: true !default;
         -o-transform: translateZ(0);
         transform: translateZ(0);
 
-        img { display: block; max-width: 100%; }
+        img { display: block; max-width: 100%; width: 100%;}
 
         > * {
           position: absolute;
@@ -186,48 +186,63 @@ $orbit-timer-hide-for-small: true !default;
       }
 
       .orbit-slide-number {
-        #{$default-float}: 10px;
+        display: block;
+        position: absolute;
+        top: 0px;
+        margin-left: -10px;
+        width: 70px;
+        height: 40px;
+
+        padding: 10px 5px;
+        white-space: nowrap;
+        border-bottom-right-radius: 12px;
+
         background: $orbit-slide-number-bg;
         color: $orbit-slide-number-font-color;
         font-size: 12px;
-        position: absolute;
-        span { font-weight: 700; padding: $orbit-slide-number-padding;}
-        top: 10px;
         z-index: 10;
+        span { font-weight: 700; padding: $orbit-slide-number-padding;}
+        #{$default-float}: 10px;
       }
 
       .orbit-timer {
-        
+
         position: absolute;
-        top: 12px;
-        #{$opposite-direction}: 10px;
-        height: 6px;
-        width: 100px;
+        top: 520px;
+        right: 0 !important;
+        height: 20px;
+        width: 100%;
         z-index: 10;
-        
+
+        background-color: rgba(1,1,1, 0.4);
+        border-bottom-left-radius: 12px;
+
+        #{$opposite-direction}: 10px;
 
         .orbit-progress {
           @if $orbit-timer-show-progress-bar {
-            height: 3px;
+            height: 4px;
             background-color: $orbit-timer-bg;
             display: block;
             width: 0;
             position: relative;
-            right: 20px;
-            top: 5px;
-            
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+
           }
         }
 
         // Play button
         & > span {
-          border: solid 4px $white;
+          border: solid 4px $orbit-timer-bg;
           border-bottom: none;
           border-top: none;
           display: none;
           height: 14px;
           position: absolute;
-          top: 0;
+          top: -30px;
+          margin-right: 12px;
           width: 11px;
           #{$opposite-direction}: 0;
         }
@@ -235,17 +250,18 @@ $orbit-timer-hide-for-small: true !default;
         // Pause button
         &.paused {
           & > span {
-            top: 0;
+            top: -30px;
+            margin-right: 12px;
             width: 11px;
             height: 14px;
             border: inset 8px;
             border-left-style: solid;
             border-color: transparent;
-            border-left-color: $white;
+            border-left-color: $orbit-timer-bg;
             #{$opposite-direction}: -4px;
 
             &.dark {
-              border-left-color: $oil;
+              border-left-color: $orbit-timer-bg;
             }
           }
         }

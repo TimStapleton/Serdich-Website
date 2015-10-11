@@ -926,7 +926,7 @@ $magellan-padding: 12px;
 // $include-html-orbit-classes: $include-html-classes;
 
 // We use these to control the caption styles
-// $orbit-container-bg: none;
+$orbit-container-bg: none;
 // $orbit-caption-bg: rgba(51,51,51, .8);
 // $orbit-caption-font-color: $white;
 // $orbit-caption-font-size: rem-calc(14);
@@ -941,8 +941,8 @@ $magellan-padding: 12px;
 // $orbit-nav-arrow-color-hover: $white;
 
 // We use these to control the timer styles
-// $orbit-timer-bg: rgba(255,255,255,0.3);
-// $orbit-timer-show-progress-bar: true;
+$orbit-timer-bg: rgba(255,255,255,0.8);
+$orbit-timer-show-progress-bar: true;
 
 // We use these to control the bullet nav styles
 // $orbit-bullet-nav-color: $iron;
@@ -950,7 +950,7 @@ $magellan-padding: 12px;
 // $orbit-bullet-radius: rem-calc(9);
 
 // We use these to controls the style of slide numbers
-// $orbit-slide-number-bg: rgba(0,0,0,0);
+$orbit-slide-number-bg: rgba(1,1,1,0.3);
 // $orbit-slide-number-font-color: $white;
 // $orbit-slide-number-padding: rem-calc(5);
 
