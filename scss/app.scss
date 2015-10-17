@@ -418,14 +418,6 @@ $slider-height: 540px;
 }
 
 //###FOOTER###
-
-#spacer {
-  height: $footer-height;
-  background-color: $dark;
-
-  z-index: -2000;
-}
-
 #footer {
   width: 100%;
   height: $footer-height;
@@ -437,7 +429,7 @@ $slider-height: 540px;
 
   z-index: -1;
 
-  padding-top: 1.7em;
+  padding-top: 3.7em !important;
   text-align: center;
 
   background-color: $tuatara;
@@ -445,19 +437,23 @@ $slider-height: 540px;
   background-size: 320px 240px;
   background-repeat: repeat;
 
-  .map {
-    list-style: none;
-    text-align: left;
+  h3, h4, h5 {
+    color: $iron !important;
+  }
 
-    li {
-      text-align: left;
-    }
+  .copyright {
+    text-align: center;
+    background-color: rgba(1,1,1,0.4) !important;
 
-    a {
-      text-decoration: none;
-      color: $aluminum;
+    display: block;
+    box-sizing: border-box;
 
-      text-align: left;
-    }
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0.8em;
+
+    left: 0;
+    bottom: 0;
   }
 }
