@@ -140,7 +140,7 @@ $green: #4BD97D;
 $dark: #111111;
 
 // We use these to control various global styles
-$body-bg: $pale;
+$body-bg: $black;
 $body-font-color: $white;
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-light;
@@ -236,11 +236,11 @@ $header-bottom-margin: .5rem;
 $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(48);
-$h2-font-size: rem-calc(40);
-$h3-font-size: rem-calc(25);
-$h4-font-size: rem-calc(22);
-$h5-font-size: rem-calc(20);
+$h1-font-size: rem-calc(30);
+$h2-font-size: rem-calc(24);
+$h3-font-size: rem-calc(22);
+$h4-font-size: rem-calc(20);
+$h5-font-size: rem-calc(18);
 $h6-font-size: 1rem;
 
 // We use these to control header size reduction on small screens
@@ -935,8 +935,8 @@ $orbit-container-bg: none;
 // $orbit-caption-height: auto;
 
 // We use these to control the left/right nav styles
-// $orbit-nav-bg: transparent;
-// $orbit-nav-bg-hover: rgba(0,0,0,0.3);
+$orbit-nav-bg: rgba(0,0,0,0.3);
+$orbit-nav-bg-hover: rgba(0,0,0,0.5);
 // $orbit-nav-arrow-color: $white;
 // $orbit-nav-arrow-color-hover: $white;
 
@@ -959,7 +959,7 @@ $orbit-slide-number-bg: rgba(1,1,1,0.3);
 // $preloader-class: "preloader";
 
 // Hide controls on small
-// $orbit-nav-hide-for-small: true;
+$orbit-nav-hide-for-small: false;
 // $orbit-bullet-hide-for-small: true;
 // $orbit-timer-hide-for-small: true;
 

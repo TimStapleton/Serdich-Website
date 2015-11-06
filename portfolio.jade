@@ -6,7 +6,7 @@ html
     meta(name = "viewport" content = "width=device-width, initial-scale=1.0")
     
     //TITLE
-    title Hey bros
+    title Текстиль в Интерьере
     
     //FAVICON
     link(rel="icon" type="image/png" href="images/favicon.png")
@@ -50,29 +50,30 @@ html
               li
                 a(href = "#") Блог
               
-    section.fullWidth.header
-      //#logo
-        //.row
-          //.small-12.columns
-            //h1.up.text-center Logo
-            //img(src = "images/Logo_new.png")
-      //.logo
-        img(src = "images/Logo_shadow.png")
-      
-      .intro
-        //h2.text-left Здравствуй!
-        //h3.text-left Я - дизайнер-декоратор Наталья Сердич.
-        p.text-justify Текстиль играет важнейшую роль в создании красивого и стильного интерьера. Шторы и гардины, покрывала и скатерти, мебельные чехлы и подушки, оригинальные дизайнерские штучки – без них невозможно представить уютный дом. Они привносят особое настроение и тепло, а также являются неотъемлемой составляющей выбранного стиля.
+    header
+      .blur-bg
+      .fullWidth.wow.fadeInUp
+        .small-12.columns.intro
+          h1.title.bold.up <br>Портфолио
+        .small-12.columns.intro
+          hr
+        .small-12.columns.intro
+          h2.title.bold.up 
+        .small-12.columns.intro
+          h3.bold Здесь вы найдете мои работы
+        .small-12.columns.intro
+          h5.narrow 
         
     section.fullWidth.portfolio
       .row
         .large-12.medium-12.small-12.columns
-          h1.text-center.up Разделы
+          h1.text-center.bold.up Разделы
+          hr.grey
         .small-12.columns
           div(data-magellan-expedition="fixed")
             dl.sub-nav
               dd(data-magellan-arrival="1")
-                a(href="#1") Гостинные
+                a(href="#1") Гостиные
               dd(data-magellan-arrival="2")
                 a(href="#2") Спальни
               dd(data-magellan-arrival="3")
@@ -85,20 +86,47 @@ html
                 a(href="#6") Разное
               dd(data-magellan-arrival="7")
                 a(href="#7") Эскизы
-        .medium-6.small-12.columns#1
-          h2.text-left(data-magellan-destination="1") Гостинные
+                
+        .large-6.small-12.columns#1
+          h2.text-left.bold(data-magellan-destination="1") Гостиные
           a(name="1")
           .slider.slideshow-wrapper
             .preloader
             ul.example-orbit(data-orbit)
               li
-                img(src="images/textile2.jpg" alt="")
+                img(src="images/gallery/livingRoom/l1.jpg" alt="")
               li
-                img(src="images/textile2.jpg" alt="")
+                img(src="images/gallery/livingRoom/l2.jpg" alt="")
               li
-                img(src="images/textile2.jpg" alt="")
-        .medium-6.small-12.columns#2
-          h2.text-left(data-magellan-destination="2") Спальни
+                img(src="images/gallery/livingRoom/l3.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l4.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l5.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l6.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l7.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l8.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l9.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l10.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l11.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l12.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l13.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l14.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l15.jpg" alt="")
+              li
+                img(src="images/gallery/livingRoom/l16.jpg" alt="")
+        .large-6.small-12.columns#2
+          h2.text-left.bold(data-magellan-destination="2") Спальни
           a(name="2")
           .slider.slideshow-wrapper
             .preloader
@@ -107,34 +135,54 @@ html
                 img(src="images/textile2.jpg" alt="")
               li
                 img(src="images/textile2.jpg" alt="")
-              li
-                img(src="images/textile2.jpg" alt="")
-        .medium-6.small-12.columns#3
-          h2.text-left(data-magellan-destination="3") Кухни
+        .large-6.small-12.columns#3
+          h2.text-left.bold(data-magellan-destination="3") Кухни
           a(name="3")
           .slider.slideshow-wrapper
             .preloader
             ul.example-orbit(data-orbit)
               li
-                img(src="images/textile2.jpg" alt="")
+                img(src="images/gallery/kitchen/k1.jpg" alt="")
               li
-                img(src="images/textile2.jpg" alt="")
+                img(src="images/gallery/kitchen/k2.jpg" alt="")
               li
-                img(src="images/textile2.jpg" alt="")
-        .medium-6.small-12.columns#4
-          h2.text-left(data-magellan-destination="4") Детские
+                img(src="images/gallery/kitchen/k3.jpg" alt="")
+              li
+                img(src="images/gallery/kitchen/k4.jpg" alt="")
+              li
+                img(src="images/gallery/kitchen/k5.jpg" alt="")
+              li
+                img(src="images/gallery/kitchen/k6.jpg" alt="")
+              li
+                img(src="images/gallery/kitchen/k7.jpg" alt="")
+              li
+                img(src="images/gallery/kitchen/k8.jpg" alt="")
+              li
+                img(src="images/gallery/kitchen/k9.jpg" alt="")
+        .large-6.small-12.columns#4
+          h2.text-left.bold(data-magellan-destination="4") Детские
           a(name="4")
           .slider.slideshow-wrapper
             .preloader
             ul.example-orbit(data-orbit)
               li
-                img(src="images/textile2.jpg" alt="")
+                img(src="images/gallery/childrensRoom/c1.jpg" alt="")
               li
-                img(src="images/textile2.jpg" alt="")
+                img(src="images/gallery/childrensRoom/c2.jpg" alt="")
               li
-                img(src="images/textile2.jpg" alt="")
-        .medium-6.small-12.columns#5
-          h2.text-left(data-magellan-destination="5") Кабинеты
+                img(src="images/gallery/childrensRoom/c3.jpg" alt="")
+              li
+                img(src="images/gallery/childrensRoom/c4.jpg" alt="")
+              li
+                img(src="images/gallery/childrensRoom/c5.jpg" alt="")
+              li
+                img(src="images/gallery/childrensRoom/c6.jpg" alt="")
+              li
+                img(src="images/gallery/childrensRoom/c7.jpg" alt="")
+              li
+                img(src="images/gallery/childrensRoom/c8.jpg" alt="")
+        .large-6.small-12.columns#5
+          h2.text-left.bold(data-magellan-destination="5") Кабинеты
           a(name="5")
           .slider.slideshow-wrapper
             .preloader
@@ -145,8 +193,8 @@ html
                 img(src="images/textile2.jpg" alt="")
               li
                 img(src="images/textile2.jpg" alt="")
-        .medium-6.small-12.columns#7
-          h2.text-left(data-magellan-destination="6") Разное
+        .large-6.small-12.columns#6
+          h2.text-left.bold(data-magellan-destination="6") Разное
           a(name="6")
           .slider.slideshow-wrapper
             .preloader
@@ -157,8 +205,8 @@ html
                 img(src="images/textile2.jpg" alt="")
               li
                 img(src="images/textile2.jpg" alt="")
-        .medium-12.small-12.columns#6
-          h2.text-left(data-magellan-destination="7") Эскизы
+        .large-12.small-12.columns#7
+          h2.text-left.bold(data-magellan-destination="7") Эскизы
           a(name="7")
           .slider.slideshow-wrapper
             .preloader
@@ -174,34 +222,11 @@ html
       .row
         .large-offset-2.medium-offset-1.large-8.medium-10.small-12.columns
           .row
-            .large-6.medium-6.small-12.columns
-              .row  
-                .large-12.columns
-                  h5.text-left На сайте:
-                .large-6.medium-6.small-6.columns
-                  ul.map
-                    li
-                      a(href = "index.html") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                .large-6.medium-6.small-6.columns
-                  ul.map
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
-                    li
-                      a(href = "#") Ссылка
+            .small-12.columns
+              h4 © 2002 - 2015   Наталья Сердич - частный дизайнер декоратор.
+              h5 Телефон: 8 (916) 643-97-05    Email: serdichn@gmail.com
+      .small-12.columns.copyright
+        h6 © Copyright | Site design and brand identity - Tim Surkov
           
     //SCRIPTS
     //JQUERY
@@ -219,5 +244,8 @@ html
     
     //APP
     script(src = "js/app.js")
+    
+    //SCROLL EFFETCS
+    script(src = "js/scroll.js")
     
     script jQuery(document).ready(function($) {$(window).trigger('resize');});

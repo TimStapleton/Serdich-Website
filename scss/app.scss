@@ -60,54 +60,94 @@ section.blocky, header, footer {
   height: auto;
 }
 
+.bold {
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.narrow {
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
 .up {
   text-transform: uppercase;
 }
 
+hr {
+  width: 50%;
+  min-width: 280px;
+  max-width: 620px;
+
+  top: 20px;
+  margin: 0.6em auto;
+
+  border: 1.5px solid $white;
+
+  box-shadow: 0 1px 2px #333;
+}
+
+hr.grey {
+  border: 1.5px solid $grey;
+}
+
+hr.left {
+  align: left;
+}
+hr.right {
+  align: right;
+}
+
 //###HEADER#STYLES###
-.header{
+.blur-bg {
+  display: block;
+  position: absolute;
+
+  width: 110%;
+  height: 120%;
+  left: -5%;
+  top: -0%;
+
+  background-color: $grey;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/bg2.jpg');
+
+  filter: blur(0px) brightness(0.8);
+
+  z-index: -200;
+}
+
+header{
   z-index: 0;
 
   min-height: 100vh;
   height: auto;
   width: 100%;
 
-  background-color: $grey;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-image: url('../images/bg9.jpg');
+  background-color: transparent;
 
   display: block;
   box-sizing: border-box;
+
+  text-align: center;
 
   position: relative;
   float: left;
   clear: both;
 
   margin-bottom: 0em;
+  padding-top: 32vh;
+  padding-bottom: 8em;
+
+  overflow: hidden;
+
+  h1, h2, h3, h4, h5, h6, p {
+    text-shadow: 0 1px 4px #000;
+  }
 
   .intro {
-    width: 100%;
-    height: auto;
-    max-width: $small-breakpoint;
-
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    padding: 0.6em 1em;
-    background-color: rgba(1,1,1, 0.0);
-
-    p {
-      font-size: 22px !important;
-      font-weight: 300 !important;
-      letter-spacing: 0.5px;
-      line-height: 130%;
-
-      color: $white !important;
-      text-shadow: 1px 1px 1px $dark;
-    }
+    z-index: 100;
   }
 }
 
@@ -201,7 +241,7 @@ $logo-size: 260px;
   width: auto;
 
   z-index: 999;
-  opacity: 0.7;
+  opacity: 0.82;
 }
 
 #logotype {
@@ -215,7 +255,7 @@ $logo-size: 260px;
   width: auto;
 
   z-index: 999;
-  opacity: 0.7;
+  opacity: 0.82;
 }
 
 .fixed {
@@ -231,16 +271,20 @@ $logo-size: 260px;
   overflow: visible;
   margin-bottom: $footer-height !important;
 
-  background-color: $white;
+  background-color: $white !important;
 
   min-height: 900px;
 
-  z-index: 500;
-  box-shadow: 0 0 20px $black;
+  z-index: 100;
+  box-shadow: 0 0 50px $black;
+
+  hr {
+    margin-bottom: 70px;
+  }
 
   h1 {
     margin: 1.2em;
-    color: $dark;
+    color: $grey;
   }
 
   h2, h3, h4, h5, h6, p, a {
@@ -351,22 +395,22 @@ $point-height: 440px;
 }
 
 #item1 {
-  background-image : url("../images/textile.jpg") !important;
+  background-image : url("../images/articles/textile.jpg") !important;
 }
 #item2 {
-  background-image : url("../images/shtoru.jpg") !important;
+  background-image : url("../images/articles/shtoru.jpg") !important;
 }
 #item3 {
-  background-image : url("../images/tkani.jpg") !important;
+  background-image : url("../images/articles/tkani.jpg") !important;
 }
 #item4 {
-  background-image : url("../images/karniz.jpg") !important;
+  background-image : url("../images/articles/karniz.jpg") !important;
 }
 #item5 {
-  background-image : url("../images/sunprotection.jpg") !important;
+  background-image : url("../images/articles/sunprotection.jpg") !important;
 }
 #item6 {
-  background-image : url("../images/misc.jpg") !important;
+  background-image : url("../images/articles/misc.jpg") !important;
 }
 
 //###PORTFOLIO###
@@ -385,6 +429,9 @@ $slider-height: 540px;
   z-index: 500;
   box-shadow: 0 0 20px $black;
 
+  hr {
+    margin-bottom: 70px;
+  }
 
   h1 {
     color: $grey;
@@ -406,13 +453,17 @@ $slider-height: 540px;
 
     max-width: 1280px;
 
-    background-color: $iron;
-    border-radius: 12px;
+    background-color: transparent;
+    border-radius: 12px !important;
 
     overflow: hidden;
 
     ul {
       height: $slider-height !important;
+    }
+    @media #{small-only} {
+      overflow-y: visible !important;
+      height: auto;
     }
   }
 }

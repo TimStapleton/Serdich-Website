@@ -6,7 +6,7 @@ html
     meta(name = "viewport" content = "width=device-width, initial-scale=1.0")
     
     //TITLE
-    title Hey bros
+    title Текстиль в Интерьере
     
     //FAVICON
     link(rel="icon" type="image/png" href="images/favicon.png")
@@ -15,7 +15,7 @@ html
     link(rel = "stylesheet" href = "stylesheets/app.css")
     
     //FONT
-    link(href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css')
     
     //ANIMATE WOW
     link(rel = "stylesheet" href = "stylesheets/animate.css")
@@ -50,51 +50,55 @@ html
               li
                 a(href = "#") Блог
               
-    section.fullWidth.header
-      //#logo
-        //.row
-          //.small-12.columns
-            //h1.up.text-center Logo
-            //img(src = "images/Logo_new.png")
-      //.logo
-        //img(src = "images/Logo_shadow.png")
-      
-      .intro
-        //h2.text-left Здравствуй!
-        //h3.text-left Я - дизайнер-декоратор Наталья Сердич.
-        p.text-justify Текстиль играет важнейшую роль в создании красивого и стильного интерьера. Шторы и гардины, покрывала и скатерти, мебельные чехлы и подушки, оригинальные дизайнерские штучки – без них невозможно представить уютный дом. Они привносят особое настроение и тепло, а также являются неотъемлемой составляющей выбранного стиля.
+    header
+      .blur-bg
+      .fullWidth.wow.fadeInUp
+        .small-12.columns.intro
+          h1.title.bold.up Здравствуйте!
+        .small-12.columns.intro
+          hr
+        .small-12.columns.intro
+          h2.title.bold.up Меня зовут Наталья Сердич
+        .small-12.columns.intro
+          h3.bold Я – частный декоратор интерьеров
+        .small-12.columns.intro
+          h5.narrow <br><br>В этой области я работаю с 2000 года и люблю то, чем занимаюсь. <br> Многолетний опыт позволяет мне с уверенностью браться за самые оригинальные проекты.<br>В создании красивого и стильного интерьера декоративный текстиль играет важную роль.<br>Шторы, покрывала, скатерти, мебельные чехлы, оригинальные дизайнерские штучки <br> создают особое настроение и являются неотъемлемой составляющей выбранного стиля.<br>Расскажите о своих пожеланиях, и мы вместе создадим пространство вашей мечты! 
+      //.intro
+        //h3.text-left Здравствуйте!
+        //p.text-left  Меня зовут Наталья Сердич. Я – частный декоратор интерьеров. В этой области я работаю с 2000 года и люблю то, чем занимаюсь. Многолетний опыт позволяет мне с уверенностью браться за самые оригинальные проекты.<br>В создании красивого и стильного интерьера декоративный текстиль играет важную роль. Шторы, покрывала, скатерти, мебельные чехлы, оригинальные дизайнерские штучки создают особое настроение и являются неотъемлемой составляющей выбранного стиля. Расскажите о своих пожеланиях, и мы вместе создадим пространство вашей мечты! 
         
     section.fullWidth.content#content
       .row
-        .large-12.medium-12.small-12.columns
-          h1.text-center.up Разделы
-        .large-4.medium-6.small-12.columns
+        .large-12.medium-12.small-12.columns.wow.fadeInUp
+          h1.text-center.bold.up Разделы
+          hr.grey
+        .large-4.medium-6.small-12.columns.wow.fadeInUp
           .point#item1
             a.description(href = "#")
               h3.text-center.name Текстиль в интерьере
               p Декоративный текстиль: шторы, ковры, чехлы для мебели, скатерти, подушки,  покрывала и другие прекрасные мелочи создадут неповторимую атмосферу вашего дома и подчеркнут чувство стиля своего хозяина.
-        .large-4.medium-6.small-12.columns
+        .large-4.medium-6.small-12.columns.wow.fadeInUp
           .point#item2
               a.description(href = "#")
                 h3.text-center.name Шторы на заказ
                 p Подобранные со вкусом декоративные ткани и профессионально сшитые из них шторы,  изящные карнизы и всевозможные аксессуары подчеркнут выбранный стиль и придадут дизайнерским решениям законченность.
-        .large-4.medium-6.small-12.columns
+        .large-4.medium-6.small-12.columns.wow.fadeInUp
           .point#item3
             a.description(href = "#")
               h3.text-center.name Ткани
               p Декоративные ткани играют важнейшую роль в современном интерьере. Сочетая в себе психологию цвета, рисунка и фактуры, ткани не только украшают, но и вносят в интерьер особую атмосферу.
-        .large-4.medium-6.small-12.columns
+        .large-4.medium-6.small-12.columns.wow.fadeInUp
           .point#item4
             a.description(href = "#")
               h3.text-center.name Карнизы и аксессуары
               p Карнизы для штор являются важным элементом при оформлении окон. А всевозможные аксессуары придают шторам роскошный вид и вносят в общую композицию художественный изыск и очарование. 
 
-        .large-4.medium-6.small-12.columns
+        .large-4.medium-6.small-12.columns.wow.fadeInUp
           .point#item5
             a.description(href = "#")
               h3.text-center.name Солнцезащитные системы
               p Солнцезащитные системы - это современный и лаконичный вариант оформления окон и интерьера в целом. К солнцезащитным системам относятся разнообразные жалюзи (из алюминия, пластика, дерева, бамбука), а также рулонные шторы, шторы-плиссе, шторы из бамбука...
-        .large-4.medium-6.small-12.columns
+        .large-4.medium-6.small-12.columns.wow.fadeInUp
           .point#item6
             a.description(href = "#")
               h3.text-center.name Штучки
@@ -103,13 +107,12 @@ html
     //section.fullWidth#spacer
           
     section.fullWidth#footer
-      .small-12.columns
-        .row
-          .large-offset-2.medium-offset-1.large-8.medium-10.small-12.columns
-            .row
-              .small-12.columns
-                h4 © 2002 - 2015   Наталья Сердич - частный дизайнер декоратор.
-                h5 Телефон: 8 (916) 643-97-05    Email: serdichn@gmail.com
+      .row
+        .large-offset-2.medium-offset-1.large-8.medium-10.small-12.columns
+          .row
+            .small-12.columns
+              h4 © 2002 - 2015   Наталья Сердич - частный дизайнер декоратор.
+              h5 Телефон: 8 (916) 643-97-05    Email: serdichn@gmail.com
       .small-12.columns.copyright
         h6 © Copyright | Site design and brand identity - Tim Surkov
           
@@ -125,5 +128,8 @@ html
     
     //APP
     script(src = "js/app.js")
+    
+    //SCROLL EFFETCS
+    script(src = "js/scroll.js")
     
     script jQuery(document).ready(function($) {$(window).trigger('resize');});

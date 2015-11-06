@@ -146,7 +146,7 @@ $orbit-timer-hide-for-small: true !default;
         -o-transform: translateZ(0);
         transform: translateZ(0);
 
-        img { display: block; max-width: 100%; width: 100%;}
+        img { display: block; max-width: 100%; max-height: 100%; height: 100%; margin: 0 auto; border-radius: 12px;}
 
         > * {
           position: absolute;
@@ -206,6 +206,7 @@ $orbit-timer-hide-for-small: true !default;
       }
 
       .orbit-timer {
+        display: none !important;
 
         position: absolute;
         top: 520px;
