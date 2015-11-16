@@ -422,24 +422,28 @@ $slider-height: 540px;
   overflow: visible;
   margin-bottom: $footer-height !important;
 
-  background-color: $white;
+  background-color: $grey;
 
   min-height: 900px;
 
   z-index: 500;
   box-shadow: 0 0 20px $black;
 
+  h1, h2, h3 {
+    color: $white !important;
+  }
+
   hr {
     margin-bottom: 70px;
   }
 
   h1 {
-    color: $grey;
+    //color: $grey;
     margin: 1.2em;
   }
 
   h2 {
-    color: $grey;
+    //color: $grey;
     margin: 1em 5%;
   }
 
@@ -447,19 +451,27 @@ $slider-height: 540px;
   .slider {
     display: block;
     box-sizing: border-box;
-    width: 90%;
+    width: 80%;
     height: $slider-height;
     margin: 1em auto;
 
     max-width: 1280px;
 
-    background-color: transparent;
-    border-radius: 12px !important;
+    background-color: white;
+
+    border: 4px solid white;
 
     overflow: hidden;
 
     ul {
       height: $slider-height !important;
+
+      li {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
     }
     @media #{small-only} {
       overflow-y: visible !important;
